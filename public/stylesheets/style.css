@@ -1,0 +1,37 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: red;
+}
+
+h1 {
+  text-align: center;
+}
+
+.wrapper {
+  width: 100%
+}
+
+.container {
+  width: 1200px;
+  margin: 10px auto;
+}
+
+.flex-parent {
+  display: flex;
+  width: 100%;
+
+}
+
+.flex-parent>div {
+  background-color: #e1f0ff;
+  border: 2px dotted lightslategrey;
+  box-sizing: border-box;
+  flex-basis: calc(50% - 40px);
+  flex: 1;
+  min-height: 100px;
+  padding: 20px;
+}

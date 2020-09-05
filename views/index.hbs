@@ -1,0 +1,20 @@
+<h1>{{title}}</h1>
+<div class="wrapper">
+  <div class="container flex-parent">
+    <div class="create-update-delete">
+      <form method="post">
+        <ul>
+          <li> <input type="radio" name="request_type" value="create_file" id="create_file"> <label for="create_file">Create test-file.txt</label></li>
+          <li> <input type="radio" name="request_type" value="delete_file" id="delete_file"> <label for="delete_file">Delete test-file.txt</label></li>
+          <li> <input type="radio" name="request_type" value="update_file" id="update_file"> <label for="update_file">Update file content</label></li>
+          <li> <input type="radio" name="request_type" value="append_file" id="append_file" checked> <label for="append_file">Append content to file</label></li>
+        </ul>
+        <textarea name="new_text"></textarea>
+        <input type="submit" value="submit">
+      </form>
+    </div>
+    <div class="read">
+      <pre>{{ myFileContent }}</pre>
+    </div>
+  </div>
+</div>
